@@ -17,6 +17,7 @@ layout: default
        style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
 </div>
 
+
 ## 研究方向
 
 - 信用风险预测

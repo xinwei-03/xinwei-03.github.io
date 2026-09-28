@@ -47,7 +47,7 @@ layout: homepage
   <div style="clear: both; margin-top: 12px;">
   <img src="./game1.jpg" alt="喜欢的游戏"
        style="display: block; width: 300px; max-width: 100%; height: auto;">
-</div>
+  </div>
 
 - **最终幻想15**
 - **质量效应**
@@ -57,7 +57,7 @@ layout: homepage
        style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
   <img src="./game3.jpg" alt="游戏图片3"
        style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-</div>
+  </div>
 
 
 {% include head-custom.html %}

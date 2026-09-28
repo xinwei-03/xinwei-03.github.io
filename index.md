@@ -44,10 +44,16 @@ layout: homepage
 - https://steamcommunity.com/profiles/76561198281780207/
 - **真三国无双起源**
 - **只狼&黑魂1**
+  <img src="./game1.jpg" alt="喜欢的游戏" style="width: 400px; max-width: 100%; height: auto;">
 - **最终幻想15**
 - **质量效应**
 - **最终幻想14**
-
+ <div style="display: flex; gap: 12px; overflow-x: auto;">
+  <img src="./game2.jpg" alt="游戏图片2"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <img src="./game3.jpg" alt="游戏图片3"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+</div>
 
 
 {% include head-custom.html %}

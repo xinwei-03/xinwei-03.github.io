@@ -48,6 +48,7 @@ layout: homepage
   <img src="./game1.jpg" alt="喜欢的游戏"
        style="display: block; width: 300px; max-width: 100%; height: auto;">
 </div>
+
 - **最终幻想15**
 - **质量效应**
 - **最终幻想14**

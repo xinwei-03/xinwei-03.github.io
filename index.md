@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: homepage
 ---
 
 # 关于我
@@ -37,3 +37,17 @@ layout: default
 ## 联系方式
 
 邮箱：xwwang03@163.com
+
+## 喜欢的游戏 🎮
+
+空闲时，我也喜欢玩游戏。
+- https://steamcommunity.com/profiles/76561198281780207/
+- **真三国无双起源**
+- **只狼&黑魂1**
+- **最终幻想15**
+- **质量效应**
+- **最终幻想14**
+
+
+
+{% include head-custom.html %}

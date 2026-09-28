@@ -22,10 +22,6 @@ layout: homepage
 - 王馨尉,王金鑫,丁子轩,等.“双碳”背景下煤电转型的三方演化博弈分析[C]//吉林省电机工程学会.2025年吉林省电机工程学会年会论文集.2025:222-226.
 - Xinwei Wang, Fang Wang, and Xun Xun. 2025. CONSTRUCTION OF ECONOMIC UNCERTAINTY INDICATORS AND CARBON PRICE PREDICTION BASED ON PARTIAL LEAST SQUARES METHOD. In Proceedings of the 2025 International Conference on Digital Economy and Information Systems (DEIS '25). Association for Computing Machinery, New York, NY, USA, 157–161
 
-## 联系方式
-
-邮箱：xwwang03@163.com
-
 ## 我的小猫 🐱
 
 <p>科研之外，我也喜欢和我的小猫待在一起。</p>

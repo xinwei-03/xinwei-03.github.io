@@ -35,8 +35,12 @@ layout: homepage
        style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
   <img src="./cat2.jpg" alt="小猫照片2"
        style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <img src="./cat3.jpg" alt="小猫照片3"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <img src="./cat4.jpg" alt="小猫照片4"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
 </div>
-<p>  </p>
+<p> </p>
 
 ## 喜欢的游戏 🎮
 

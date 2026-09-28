@@ -8,9 +8,15 @@ layout: default
 
 ## 我的小猫 🐱
 
-科研之外，我也喜欢和我的小猫待在一起。
-<img src="./cat1.jpg" alt="我的小猫" width="300">
-<img src="./cat2.jpg" alt="我的小猫" width="300">
+<p>科研之外，我也喜欢和我的小猫待在一起。</p>
+
+<div style="display: flex; gap: 12px; overflow-x: auto;">
+  <img src="./cat1.jpg" alt="小猫照片1"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <img src="./cat2.jpg" alt="小猫照片2"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+</div>
+
 ## 研究方向
 
 - 信用风险预测

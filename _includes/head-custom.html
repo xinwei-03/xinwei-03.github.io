@@ -1,8 +1,20 @@
 <style>
-  .photo-switcher {
+  /* 独立的照片区域 */
+  header .personal-gallery {
     display: block;
     width: 100%;
-    max-width: 260px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  /* 照片大小与居中 */
+  header .personal-gallery .personal-photo-button {
+    display: block;
+    box-sizing: border-box;
+    width: 240px;
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
     padding: 0;
     border: none;
     border-radius: 12px;
@@ -11,30 +23,43 @@
     cursor: pointer;
   }
 
-  .photo-switcher img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center;
+  /* 完整显示，不裁剪、不拉伸 */
+  header .personal-gallery .personal-photo-button img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
   }
 
-  .photo-switcher:focus-visible {
+  header .personal-photo-button:focus-visible {
     outline: 3px solid #267cb9;
     outline-offset: 4px;
   }
 
-  .photo-hint {
-    margin: 8px 0 16px;
+  header .personal-photo-caption {
+    margin: 10px 0 0;
+    text-align: center;
     font-size: 13px;
+    line-height: 1.5;
     color: #777;
   }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const photo = document.querySelector("header img");
-  if (!photo) return;
+  const header = document.querySelector("header");
+  if (!header || header.querySelector(".personal-gallery")) return;
+
+  const oldAvatar = header.querySelector(".image.avatar");
+  const oldPhoto = header.querySelector("img");
+  if (!oldPhoto) return;
 
   const photos = [
     "{{ '/photo1.jpg' | relative_url }}",
@@ -44,23 +69,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let current = 0;
 
+  const gallery = document.createElement("div");
+  gallery.className = "personal-gallery";
+
   const button = document.createElement("button");
   button.type = "button";
-  button.className = "photo-switcher";
+  button.className = "personal-photo-button";
   button.setAttribute("aria-label", "切换到下一张个人照片");
 
-  photo.parentNode.insertBefore(button, photo);
-  button.appendChild(photo);
+  const photo = document.createElement("img");
 
-  const hint = document.createElement("p");
-  hint.className = "photo-hint";
-  hint.setAttribute("aria-live", "polite");
-  button.insertAdjacentElement("afterend", hint);
+  const caption = document.createElement("p");
+  caption.className = "personal-photo-caption";
+  caption.setAttribute("aria-live", "polite");
+
+  button.appendChild(photo);
+  gallery.appendChild(button);
+  gallery.appendChild(caption);
+
+  // 替换模板原有头像容器，避免旧样式干扰
+  if (oldAvatar) {
+    oldAvatar.replaceWith(gallery);
+  } else {
+    oldPhoto.replaceWith(gallery);
+  }
 
   function showPhoto() {
     photo.src = photos[current];
     photo.alt = "王馨尉的个人照片，第" + (current + 1) + "张";
-    hint.textContent =
+    caption.textContent =
       "点击照片切换 · " + (current + 1) + " / " + photos.length;
   }
 
@@ -72,44 +109,3 @@ document.addEventListener("DOMContentLoaded", function () {
   showPhoto();
 });
 </script>
-<style>
-  /* 让头像外层占满左侧栏，并取消圆形裁剪 */
-  header .image.avatar {
-    display: block;
-    width: 100%;
-    max-width: none;
-    margin: 0 auto 16px;
-    padding: 0;
-    border-radius: 0;
-    overflow: visible;
-  }
-
-  /* 放大照片按钮，并水平居中 */
-  header .photo-switcher {
-    display: block;
-    width: 220px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    border: 0;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
-  /* 完整显示照片，保留原始比例 */
-  header .photo-switcher img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  /* 切换提示也居中 */
-  header .photo-hint {
-    text-align: center;
-    margin: 10px 0 16px;
-  }
-</style>

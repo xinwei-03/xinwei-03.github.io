@@ -6,18 +6,6 @@ layout: homepage
 
 你好，我是王馨尉，目前在对外经济贸易大学攻读金融学博士学位。
 
-## 我的小猫 🐱
-
-<p>科研之外，我也喜欢和我的小猫待在一起。</p>
-
-<div style="display: flex; gap: 12px; overflow-x: auto;">
-  <img src="./cat1.jpg" alt="小猫照片1"
-       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-  <img src="./cat2.jpg" alt="小猫照片2"
-       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-</div>
-<p>  </p>
-
 ## 研究方向
 
 - 信用风险预测
@@ -38,25 +26,38 @@ layout: homepage
 
 邮箱：xwwang03@163.com
 
+## 我的小猫 🐱
+
+<p>科研之外，我也喜欢和我的小猫待在一起。</p>
+
+<div style="display: flex; gap: 12px; overflow-x: auto;">
+  <img src="./cat1.jpg" alt="小猫照片1"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <img src="./cat2.jpg" alt="小猫照片2"
+       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+</div>
+<p>  </p>
+
 ## 喜欢的游戏 🎮
 
 空闲时，我也喜欢玩游戏。
 - https://steamcommunity.com/profiles/76561198281780207/
 - **真三国无双起源**
 - **只狼&黑魂1**
-  <div style="clear: both; margin-top: 12px;">
-  <img src="./game1.jpg" alt="喜欢的游戏"
-       style="display: block; width: 300px; max-width: 100%; height: auto;">
+  <div style="clear: both; margin: 16px 0 32px; text-align: center;">
+    <img src="./game1.jpg" alt="喜欢的游戏"
+         style="display: block; width: 300px; max-width: 100%; height: auto; margin: 0 auto;">
   </div>
 
 - **最终幻想15**
 - **质量效应**
 - **最终幻想14**
-   <div style="display: flex; gap: 12px; overflow-x: auto;">
-    <img src="./game2.jpg" alt="游戏图片2"
-         style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-    <img src="./game3.jpg" alt="游戏图片3"
-         style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+  <div style="clear: both; margin: 16px 0 32px; overflow-x: auto;">
+    <div style="display: flex; gap: 12px; width: max-content; margin: 0 auto;">
+      <img src="./game2.jpg" alt="游戏图片2"
+           style="display: block; height: 200px; width: auto; max-width: none; flex-shrink: 0;">
+      <img src="./game3.jpg" alt="游戏图片3"
+           style="display: block; height: 200px; width: auto; max-width: none; flex-shrink: 0;">
     </div>
 
 

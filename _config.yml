@@ -1,5 +1,25 @@
 title: "王馨尉"
-description: "金融学博士生｜对外经济贸易大学"
-theme: jekyll-theme-minimal
-show_downloads: false
-logo: /photo1.jpg
+position: "金融学博士生"
+affiliation: "对外经济贸易大学"
+affiliation_link: " "
+description: "王馨尉的个人主页"
+lang: "zh-CN"
+
+avatar: ./photo1.jpg
+
+remote_theme: yaoyao-liu/minimal-light
+plugins:
+  - jekyll-remote-theme
+
+font: "Serif"
+auto_dark_mode: false
+enable_footnote: true
+
+email: "xwwang03@163.com"
+google_scholar: ""
+cv_link: ""
+github_link: ""
+linkedin: ""
+twitter: ""
+google_analytics: ""
+canonical: ""

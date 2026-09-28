@@ -9,7 +9,8 @@ layout: default
 ## 我的小猫 🐱
 
 科研之外，我也喜欢和我的小猫待在一起。
-
+<img src="./cat1.jpg" alt="我的小猫" width="300">
+<img src="./cat2.jpg" alt="我的小猫" width="300">
 ## 研究方向
 
 - 信用风险预测

@@ -52,12 +52,12 @@ layout: homepage
 - **最终幻想15**
 - **质量效应**
 - **最终幻想14**
- <div style="display: flex; gap: 12px; overflow-x: auto;">
-  <img src="./game2.jpg" alt="游戏图片2"
-       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-  <img src="./game3.jpg" alt="游戏图片3"
-       style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
-  </div>
+   <div style="display: flex; gap: 12px; overflow-x: auto;">
+    <img src="./game2.jpg" alt="游戏图片2"
+         style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+    <img src="./game3.jpg" alt="游戏图片3"
+         style="height: 220px; width: auto; max-width: none; flex-shrink: 0; display: block;">
+    </div>
 
 
 {% include head-custom.html %}

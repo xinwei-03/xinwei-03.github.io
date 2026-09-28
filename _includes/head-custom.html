@@ -72,3 +72,44 @@ document.addEventListener("DOMContentLoaded", function () {
   showPhoto();
 });
 </script>
+<style>
+  /* 让头像外层占满左侧栏，并取消圆形裁剪 */
+  header .image.avatar {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 16px;
+    padding: 0;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  /* 放大照片按钮，并水平居中 */
+  header .photo-switcher {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* 完整显示照片，保留原始比例 */
+  header .photo-switcher img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* 切换提示也居中 */
+  header .photo-hint {
+    text-align: center;
+    margin: 10px 0 16px;
+  }
+</style>

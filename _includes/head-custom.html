@@ -1,0 +1,74 @@
+<style>
+  .photo-switcher {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .photo-switcher img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .photo-switcher:focus-visible {
+    outline: 3px solid #267cb9;
+    outline-offset: 4px;
+  }
+
+  .photo-hint {
+    margin: 8px 0 16px;
+    font-size: 13px;
+    color: #777;
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const photo = document.querySelector("header img");
+  if (!photo) return;
+
+  const photos = [
+    "{{ '/photo1.jpg' | relative_url }}",
+    "{{ '/photo2.jpg' | relative_url }}",
+    "{{ '/photo3.jpg' | relative_url }}"
+  ];
+
+  let current = 0;
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "photo-switcher";
+  button.setAttribute("aria-label", "切换到下一张个人照片");
+
+  photo.parentNode.insertBefore(button, photo);
+  button.appendChild(photo);
+
+  const hint = document.createElement("p");
+  hint.className = "photo-hint";
+  hint.setAttribute("aria-live", "polite");
+  button.insertAdjacentElement("afterend", hint);
+
+  function showPhoto() {
+    photo.src = photos[current];
+    photo.alt = "王馨尉的个人照片，第" + (current + 1) + "张";
+    hint.textContent =
+      "点击照片切换 · " + (current + 1) + " / " + photos.length;
+  }
+
+  button.addEventListener("click", function () {
+    current = (current + 1) % photos.length;
+    showPhoto();
+  });
+
+  showPhoto();
+});
+</script>

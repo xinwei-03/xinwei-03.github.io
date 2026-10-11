@@ -27,8 +27,6 @@ export default function TextPage({ config, content, embedded = false }: TextPage
             <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
                 <ReactMarkdown
                     components={{
-                                                img: ({ src, alt }) => (
-                            // eslint-disable-next-line @next/next/no-img-element
                         img: ({ src, alt }) => (
                             // eslint-disable-next-line @next/next/no-img-element
                             <img

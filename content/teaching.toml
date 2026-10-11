@@ -1,10 +1,45 @@
 type = "card"
-title = "Teaching"
-description = "Courses I have taught or assisted with."
+title = "教学经历"
+description = "曾任长春建筑学院管理学院专任教师，承担经济学与工商管理相关课程教学，并指导本科及专升本毕业论文。"
 
 [[items]]
-title = "Example Course"
-subtitle = "Teaching Assistant"
-date = "2024"
-content = "Description of the course and responsibilities. Content of this course can be found [here](https://example.com)."
-tags = ["Undergraduate", "CS"]
+title = "长春建筑学院 · 管理学院"
+subtitle = "工商管理专任教师"
+date = "2023.11—2026.07"
+content = """
+承担经济学与工商管理相关课程教学，参与毕业论文指导及教研室教学建设工作。
+"""
+tags = ["高校教学", "工商管理"]
+
+[[items]]
+title = "主讲课程"
+subtitle = "经济学与工商管理课程"
+content = """
+- 《西方经济学》
+- 《经济法》
+- 《客户关系管理》
+- 《公司治理》
+
+负责课程备课、课堂讲授、课件制作、试题命制及成绩分析等工作。
+
+[查看《西方经济学》教学展示 · 学院教师风采](http://gl.jladi.com/jsfc_1576/list.htm)
+"""
+tags = ["课程教学", "教学展示"]
+
+[[items]]
+title = "毕业论文指导"
+subtitle = "本科及专升本"
+content = """
+指导市场营销、企业管理方向毕业论文，围绕选题优化、文献梳理、研究框架搭建及写作规范，为学生提供指导。
+"""
+tags = ["论文指导", "市场营销", "企业管理"]
+
+[[items]]
+title = "教学建设与教研"
+subtitle = "课程资源建设与教学改进"
+content = """
+参与教学大纲编写、讲义与课件制作、题库建设及考试组织工作，并参与教研室科研与教学改革项目。
+
+运用 AI 工具辅助备课、整理知识框架和设计练习题，支持课程资源建设与教学工作。
+"""
+tags = ["课程建设", "教学研究", "AI辅助教学"]

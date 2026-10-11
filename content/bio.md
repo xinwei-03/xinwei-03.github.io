@@ -1,5 +1,7 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+你好，我是**王馨尉**，目前在**对外经济贸易大学**攻读金融学博士学位。
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+Hi, I’m Xinwei Wang. Welcome to my homepage! I am currently pursuing a Ph.D. in Finance at the University of International Business and Economics.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My academic experience also includes teaching economics and business courses at Changchun University of Architecture and Civil Engineering and supervising undergraduate theses. My research interests lie at the intersection of finance and artificial intelligence, with a particular focus on credit risk modeling and prediction, and the use of machine learning to support financial decision-making. I am also interested in how generative AI can improve financial information processing.
+
+Feel free to get in touch to exchange ideas or explore research collaborations!

@@ -1,9 +1,4 @@
-type = "card"
-title = "Services"
-description = "Professional services and community involvement."
-
-[[items]]
-title = "Reviewer"
-subtitle = "Journal Name"
-date = "2024"
-content = "Reviewed papers for..."
+type = "text"
+title = "个人生活"
+description = "科研之外，和小猫相处，也在游戏世界里探索。"
+source = "services.md"

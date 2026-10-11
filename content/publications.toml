@@ -1,4 +1,4 @@
 type = "publication"
-title = "Publications"
-description = "A collection of my research work."
+title = "研究成果"
+description = "已发表论文"
 source = "publications.bib"

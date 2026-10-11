@@ -41,6 +41,8 @@ export default function Profile({ author, social, features, researchInterests }:
         "/photo1.jpg",
         "/photo2.jpg",
         "/photo3.jpg",
+        "/photo4.jpg",
+        "/photo5.jpg",
     ];
 
     const [photoIndex, setPhotoIndex] = useState(0);

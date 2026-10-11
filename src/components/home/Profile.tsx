@@ -36,7 +36,18 @@ interface ProfileProps {
 
 export default function Profile({ author, social, features, researchInterests }: ProfileProps) {
     const messages = useMessages();
+    
+    const photos = [
+        "/photo1.jpg",
+        "/photo2.jpg",
+        "/photo3.jpg",
+    ];
 
+    const [photoIndex, setPhotoIndex] = useState(0);
+
+    const nextPhoto = () => {
+        setPhotoIndex((current) => (current + 1) % photos.length);
+    };
     const [hasLiked, setHasLiked] = useState(false);
     const [showThanks, setShowThanks] = useState(false);
     const [showAddress, setShowAddress] = useState(false);
@@ -111,16 +122,43 @@ export default function Profile({ author, social, features, researchInterests }:
             transition={{ duration: 0.6 }}
             className="sticky top-8"
         >
-            {/* Profile Image */}
-            <div className="w-64 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
-                <Image
-                    src={author.avatar}
-                    alt={author.name}
-                    width={256}
-                    height={256}
-                    className="w-full h-full object-cover object-[32%_center]"
-                    priority
-                />
+            {/* 点击切换个人照片 */}
+            <div className="mb-8 text-center">
+                <button
+                    type="button"
+                    onClick={nextPhoto}
+                    aria-label="切换到下一张个人照片"
+                    className="block mx-auto overflow-hidden rounded-2xl shadow-lg cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-500"
+                    style={{
+                        width: "260px",
+                        maxWidth: "100%",
+                        padding: 0,
+                        border: "none",
+                        background: "transparent",
+                    }}
+                >
+                    <Image
+                        src={photos[photoIndex]}
+                        alt={`${author.name}的个人照片，第${photoIndex + 1}张`}
+                        width={260}
+                        height={325}
+                        className="block w-full"
+                        style={{
+                            aspectRatio: "4 / 5",
+                            height: "auto",
+                            objectFit: "contain",
+                            objectPosition: "center",
+                        }}
+                        priority
+                    />
+                </button>
+
+                <p
+                    aria-live="polite"
+                    className="mt-3 text-sm text-neutral-500 dark:text-neutral-400"
+                >
+                    点击照片切换 · {photoIndex + 1} / {photos.length}
+                </p>
             </div>
 
             {/* Name and Title */}

@@ -17,7 +17,7 @@ location = "北京，中国"
 location_url = "xinwei-03.github.io"
 location_details = []
 google_scholar = ""
-orcid = "0009-0006-0274-5518"
+orcid = "https://orcid.org/my-orcid?orcid=0009-0006-0274-5518"
 github = "https://github.com/xinwei-03"
 linkedin = ""
 

@@ -15,9 +15,7 @@ Previously, I taught economics and business courses at Changchun University of A
 Feel free to get in touch to exchange ideas or explore research collaborations!
 
 ## 教育与任教经历
-
-- **2026.09—至今｜对外经济贸易大学**  
+**2026.09—至今｜对外经济贸易大学**  
   金融学博士在读
-
-- **2023.11—2026.07｜长春建筑学院**  
+**2023.11—2026.07｜长春建筑学院**  
   专任教师

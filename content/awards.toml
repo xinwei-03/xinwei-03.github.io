@@ -1,27 +1,41 @@
 type = "card"
-title = "Awards"
-description = "Honors and awards I have received."
+title = "荣誉奖励"
+description = "教学创新、课程思政与教学资源建设相关获奖。"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "第十八届全国商科教育实践教学及科研课题大赛"
+subtitle = "三等奖 · 多媒体教学课件作品"
+content = """
+**获奖作品：**《合和·制衡·高效—三会一层的协同之道》
+"""
+tags = ["多媒体教学课件"]
+
+[[items]]
+title = "长春建筑学院教师教学创新大赛暨第五届课堂教学创新大赛"
+subtitle = "优秀奖 · 课程思政组"
 date = "2025"
-content = "Description of the award."
+content = """
+**获奖作品：**《三维协同 融合赋能 西方经济学思政设计》
+"""
+tags = ["教学创新", "课程思政"]
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2024"
-content = "Description of the award."
+title = "管理学院第二届教学创新大赛"
+subtitle = "一等奖"
+date = "2025"
+content = ""
+tags = ["教学创新"]
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2023"
-content = "Description of the award."
+title = "管理学院实践教学案例大赛"
+subtitle = "二等奖"
+date = "2025"
+content = ""
+tags = ["实践教学", "教学案例"]
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+title = "管理学院“微课堂·新赋能”微课大赛"
+subtitle = "二等奖"
+date = "2025"
+content = ""
+tags = ["微课教学"]
